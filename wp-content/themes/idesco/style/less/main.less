@@ -1,0 +1,251 @@
+@import '../../lib/bootstrap-3.3.4/less/bootstrap.less';
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,700,300,600,400);
+
+
+@border-radius-base: 0;
+@border-radius-large: 0;
+@border-radius-small: 0;
+
+.preload{
+  text-align: center;
+  .bar{
+    width: 6px;
+    height: 8px;
+    background-color: #232D33;
+    display: inline-block;
+    -webkit-animation: preload 0.8s linear infinite;
+    margin-left: 1px;
+    margin-right: 1px;
+    
+    &.bar-2{
+      -webkit-animation-delay: 0.266s;
+    }
+    &.bar-3{
+      -webkit-animation-delay: 0.532s;
+    }
+  }
+  @-webkit-keyframes preload{
+    0%{ -webkit-transform: scaleY(1);}
+    50%{ -webkit-transform: scaleY(3);}
+    100%{ -webkit-transform: scaleY(1);}
+  }
+  @-moz-keyframes preload{
+    0%{ -moz-transform: scaleY(1);}
+    50%{ -moz-transform: scaleY(3);}
+    100%{ -moz-transform: scaleY(1);}
+  }
+  @-ms-keyframes preload{
+    0%{ -ms-transform: scaleY(1);}
+    50%{ -ms-transform: scaleY(3);}
+    100%{ -ms-transform: scaleY(1);}
+  }
+}
+
+a{
+	transition: .3s;
+	&:hover,
+	&:focus{
+		text-decoration: none;
+	}
+}
+
+h1, h2, h3, h4, h5, h6, 
+.h1, .h2, .h3, .h4, .h5, .h6{
+	font-weight: 300;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	li{
+		list-style: none;
+	}
+}
+
+body{
+	background-color: #f0f0f0;
+	color: #222C33;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	font-size: 18px;
+}
+
+#wrapPage{
+	padding: 0;
+}
+
+#wrapHeader{
+	background-color: #25292C;
+	header{
+		img{
+			position: absolute;
+		}
+		nav{
+			ul{
+				margin: 0;
+				li{
+					display: inline-block;
+					a{
+						color: #fff;
+						padding: 27px 10px;
+						display: block;
+						font-size: 14px;
+						&:hover,
+						&:focus{
+							background-color: #313538;
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+
+
+section#whoWeAre{
+	h1{
+		margin-bottom: 30px;
+		border-left: 5px solid #027E36;
+		line-height: 50px;
+		padding-left: 10px;
+	}
+	.team{
+		margin-top: 30px;
+		>div{
+			text-align: center;
+			.occupation{
+				font-size: 14px;
+				margin-bottom: 5px;
+			}
+			p{
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+section#projects{
+	background-color: #2D333D;
+	color: #fff;
+	padding-bottom: 50px;
+	font-size: 16px;
+	
+	h1{
+		margin-bottom: 30px;
+		border-left: 5px solid #027E36;
+		line-height: 50px;
+		padding-left: 10px;
+		color: #fff;
+	}
+	img{
+		margin-right: 10px;
+  		margin-bottom: 10px;
+	}
+	p{
+		font-size: 16px;
+	}
+}
+
+
+section#partners{
+	background-color: #363E4B;
+	padding-bottom: 50px;
+	h1{
+		margin-bottom: 30px;
+		border-left: 5px solid #027E36;
+		line-height: 50px;
+		padding-left: 10px;
+		color: #fff;
+	}
+	ul{
+		text-align: center;
+		li{
+			display: inline-block;
+			a{
+				display: block;
+				padding: 15px;
+				img{
+					-webkit-filter: grayscale(100%);
+					filter: grayscale(100%);
+					transition: .3s;
+				}
+				&:hover,
+				&:focus{
+					img{
+						-webkit-filter: grayscale(0);
+						filter: grayscale(0);
+					}
+				}
+			}
+		}
+	}
+	
+}
+
+
+section#contact{
+	background-color: #fff;
+	padding-bottom: 50px;
+	h1{
+		margin-bottom: 30px;
+		border-left: 5px solid #027E36;
+		line-height: 50px;
+		padding-left: 10px;
+	}
+	.msgs{
+	 	padding: 0;
+		margin-bottom: 0;
+		text-align: center;
+	 	div{
+	 		padding: 5px;
+	 		margin-bottom: 10px;
+	 		&.error{
+				background-color: @brand-danger;
+				color: #fff;
+			}
+			&.success{
+				background-color: @brand-success;
+				color: #fff;
+			}
+	 	}
+	}
+	
+	.control-label{
+		font-weight: 400;
+	}
+	.form-control{
+		background-color: transparent;
+		border: 1px solid #999;
+		box-shadow: none;
+	}
+	textarea{
+		resize: none;
+	}
+	button[type="submit"]{
+		padding: 6px 25px;
+		margin-top: 10px;
+	}
+}
+
+footer{
+	color: #525F72;
+	background-color: #363E4B;
+	text-align: center;
+	font-size: 14px;
+	padding-bottom: 10px;
+	ul{
+		li{
+			display: inline-block;
+			a{
+				color: #fff;
+				margin: 10px 20px;
+				display: block;
+				&:hover,
+				&:focus{
+					color: #525F72;
+				}
+			}
+		}
+	}
+}
