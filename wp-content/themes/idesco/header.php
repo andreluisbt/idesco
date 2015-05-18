@@ -13,7 +13,7 @@
         <div id="wrapPage">
             <div id="wrapHeader">
                 <header class="container">
-                    <img src="imgs/logo.png" />
+                    <img src="<?php bloginfo('template_url'); ?>/imgs/logo.png" />
                     <nav class="pull-right">
                         <ul>
                             <li>
