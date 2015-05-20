@@ -22,6 +22,7 @@ $("document").ready(function(){
 	
 	
 	$('#contact form').ajaxForm({
+		type: 'post',
 		dataType : 'json',
 		beforeSubmit : function(formData, form) {
 			$msgs = $(form).find('.msgs');
