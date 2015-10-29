@@ -59,12 +59,19 @@
                     ?>
             		<br/>
             		<?php
-                        $args = array('category'=>3, 'order'=>'ASC');
+                        $args = array('category'=>3, 'order'=>'ASC', 'posts_per_page'=>-1);
                         $projectPosts = get_posts($args);
+
+                        $countClearfix = 0;
                         foreach($projectPosts as $post){
+                            $countClearfix++;
                             echo '<div class="col-md-6">
                                     '.$post->post_content.'
                                 </div>';
+                            if($countClearfix == 2){
+                                $countClearfix=0;
+                                echo '<div class="clearfix"></div>';
+                            }
                         }
                     ?>
             	</div>
