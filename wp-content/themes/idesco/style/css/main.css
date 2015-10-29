@@ -6659,22 +6659,39 @@ body {
 #wrapHeader header nav ul li a:focus {
   background-color: #313538;
 }
+section#specialty,
+section#whoWeAre {
+  margin-bottom: 50px;
+}
+section#specialty h1,
 section#whoWeAre h1 {
   margin-bottom: 30px;
   border-left: 5px solid #027E36;
   line-height: 50px;
   padding-left: 10px;
 }
+section#specialty .areas,
+section#whoWeAre .areas,
+section#specialty .team,
 section#whoWeAre .team {
   margin-top: 30px;
 }
+section#specialty .areas > div,
+section#whoWeAre .areas > div,
+section#specialty .team > div,
 section#whoWeAre .team > div {
   text-align: center;
 }
+section#specialty .areas > div .occupation,
+section#whoWeAre .areas > div .occupation,
+section#specialty .team > div .occupation,
 section#whoWeAre .team > div .occupation {
   font-size: 14px;
   margin-bottom: 5px;
 }
+section#specialty .areas > div p,
+section#whoWeAre .areas > div p,
+section#specialty .team > div p,
 section#whoWeAre .team > div p {
   font-size: 16px;
 }
@@ -6699,7 +6716,6 @@ section#projects p {
   font-size: 16px;
 }
 section#partners {
-  background-color: #363E4B;
   padding-bottom: 50px;
 }
 section#partners h1 {
@@ -6707,7 +6723,6 @@ section#partners h1 {
   border-left: 5px solid #027E36;
   line-height: 50px;
   padding-left: 10px;
-  color: #fff;
 }
 section#partners ul {
   text-align: center;

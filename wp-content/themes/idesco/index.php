@@ -2,6 +2,30 @@
 	require_once 'security.php';
     get_header(); 
 ?>
+
+            <section id="specialty" class="container">
+                <?php
+                    $whoWeArePost = get_post(58);
+                    $whoWeArePost->post_title;
+                ?>
+                <h1><?php echo $whoWeArePost->post_title; ?></h1>
+                <?php echo $whoWeArePost->post_content; ?>
+                
+                <div class="clearfix"></div>
+                
+                <div class="areas">
+                    <?php
+                        $args = array('category'=>5, 'order'=>'ASC');
+                        $teamPosts = get_posts($args);
+                        foreach($teamPosts as $post){
+                            echo '<div class="col-md-4">
+                                    '.$post->post_content.'
+                                </div>';
+                        }
+                    ?>
+                </div>
+            </section>
+
 			<section id="whoWeAre" class="container">
 				<?php
 					$whoWeArePost = get_post(1);

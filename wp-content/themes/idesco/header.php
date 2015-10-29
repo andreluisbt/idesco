@@ -17,6 +17,9 @@
                     <nav class="pull-right">
                         <ul>
                             <li>
+                                <a href="#specialty">Área de atuação</a>
+                            </li>
+                            <li>
                                 <a href="#whoWeAre">Quem somos</a>
                             </li>
                             <li>
